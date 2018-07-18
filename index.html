@@ -12,25 +12,25 @@
 
 <!-- --- HEADER --- -->
 	<header class="container-fluid">
-		<div class="row navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="row navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="navbar-wrapper">
 			<!-- --- Logo --- -->
 			<div class="navbar-brand col-12 col-sm-6 m-0 p-0">
 				<h3>Maikol Piris</h3>
 			</div>
 			<!-- --- Menu --- -->
-			<nav class="navbar-nav ml-auto col-sm-6 d-flex justify-content-between p-0 m-0 sticky-top">
-				<a href="#" class="nav-link col-4 justify-content-center">
+			<nav class="navbar-nav ml-auto col-sm-6 d-flex justify-content-between p-0 m-0 sticky-top" id="myNavbar">
+				<a href="#acerca" class="nav-link col-4 justify-content-center">
 					<div><span>Acerca</span></div>
 				</a>
-				<a href="#portpolio-anchor" class="col-4 flex-column nav-link">
-					<div><span>Porfolio</span></div>
+				<a href="#portfolio" class="col-4 flex-column nav-link">
+					<div><span>Portfolio</span></div>
 				</a>
-				<a href="#contact-anchor" class="col-4 flex-column nav-link">
+				<a href="#contact" class="col-4 flex-column nav-link">
 					<div><span>Contacto</span></div>
 				</a>
 			</nav>
 		</div>
-		<div class="jumbotron container">
+		<div class="jumbotron container" id="acerca">
 			<div class="row header-poster d-flex justify-content-center">
 					<div class="col-12 col-lg-7 d-flex align-items-center justify-content-center">
 						<div>
@@ -48,7 +48,7 @@
 		</div>
 	</header>
 <!-- ---PORTFOLIO --- -->
-	<section class="container ">
+	<section class="container" id="portfolio">
 		<div class="row justify-content-between p-3">
 			<div class="section-main col-12 col-lg-6">
 				<div class="card p-2 m-2">
@@ -89,7 +89,7 @@
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="container" id="contact">
 			<div class="row p-3">
 				<div class="col-lg-6">
 					<form class="col-12 row">
@@ -147,7 +147,7 @@
 
 	<!--Script declarations -->
    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
