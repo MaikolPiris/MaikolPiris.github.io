@@ -1,11 +1,16 @@
 $(document).ready(function(){
   $(document).scroll("on",function(){
     if ($(document).scrollTop()>75){
-      $(".navbar").css("opacity","0.7");
-      $(".navbar-brand").fadeOut("slow");
+      $(".navbar").addClass("navbarScroll")
+      $(".navbar-brand").hide();
+      $(".navbar-nav").removeClass("col-sm-6");
+      $(".navbar-nav").addClass("col-sm-12")
     } else{
+      $(".navbar").removeClass("navbarScroll")
       $(".navbar-brand").fadeIn("slow");
-      $(".navbar").css("opacity","1.0");
+      $(".navbar-nav").removeClass("col-sm-12");
+      $(".navbar-nav").addClass("col-sm-6")
+      $(".navbar-brand").fadeIn("slow");
     }
   });
   $('body').scrollspy({target: ".navbar-nav", offset: 0});   
