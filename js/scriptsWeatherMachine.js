@@ -2,8 +2,8 @@ $(document).ready(function(){
   getLocation();
   /* Funciones Auxiliares */
   function alertPos(pos){
-    $("#currentLatitude").html("  "+pos.coords.latitude);
-    $("#currentlongitude").html("  "+pos.coords.longitude);
+    $("#currentLatitude").html("  "+pos.coords.latitude.toFixed(2));
+    $("#currentlongitude").html("  "+pos.coords.longitude.toFixed(2));
     var url="https://fcc-weather-api.glitch.me/api/current?lat="+pos.coords.latitude+"&lon="+pos.coords.longitude;
     $.ajax({
       url:url,
@@ -59,9 +59,9 @@ $(document).ready(function(){
       $("#currentMinTemp").addClass("fahr");
       $("#currentMaxTemp").addClass("fahr");
       
-      $("#currentTemp").html(" "+(32+parseInt($("#currentTemp").html())*9/5)+" °F");
-      $("#currentMinTemp").html(" "+(32+parseInt($("#currentMinTemp").html())*9/5)+" °F");
-      $("#currentMaxTemp").html(" "+(32+parseInt($("#currentMaxTemp").html())*9/5)+" °F");
+      $("#currentTemp").html(" "+(32+parseInt($("#currentTemp").html())*9/5).toFixed(2)+" °F");
+      $("#currentMinTemp").html(" "+(32+parseInt($("#currentMinTemp").html())*9/5).toFixed(2)+" °F");
+      $("#currentMaxTemp").html(" "+(32+parseInt($("#currentMaxTemp").html())*9/5).toFixed(2)+" °F");
     } else {
       $("#currentTemp").addClass("centiger");
       $("#currentMinTemp").addClass("centiger");
@@ -71,9 +71,9 @@ $(document).ready(function(){
       $("#currentMinTemp").removeClass("fahr");
       $("#currentMaxTemp").removeClass("fahr");
       
-      $("#currentTemp").html(" "+((parseInt($("#currentTemp").html())-32)*5/9)+" °C");
-      $("#currentMinTemp").html(" "+((parseInt($("#currentMinTemp").html())-32)*5/9)+" °C");
-      $("#currentMaxTemp").html(" "+((parseInt($("#currentMaxTemp").html())-32)*5/9)+" °C");
+      $("#currentTemp").html(" "+((parseInt($("#currentTemp").html())-32)*5/9).toFixed(2)+" °C");
+      $("#currentMinTemp").html(" "+((parseInt($("#currentMinTemp").html())-32)*5/9).toFixed(2)+" °C");
+      $("#currentMaxTemp").html(" "+((parseInt($("#currentMaxTemp").html())-32)*5/9).toFixed(2)+" °C");
     }
     
   })
