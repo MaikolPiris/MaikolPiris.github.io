@@ -1,0 +1,58 @@
+#title{
+  color : white;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-top:50px;
+  background-color:black;
+  opacity:.7;
+  height:30%;
+}
+
+#display{
+  color:white;
+  margin:50px;
+  margin-left:0;
+  background-color:black;
+  opacity:.7;
+  height:300px;
+}
+
+#title:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#display:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.main-wrapper{
+  min-width:500px;
+  max-width:600px;
+}
+body{
+  background:url(https://wallpaperstock.net/rainy-day-wallpapers_53815_1920x1080.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*-------------------*/
+.display-main{
+  height:175px;
+  border-right:solid 2px white;
+    border-bottom:solid 2px white;
+}
+
+.display-second{
+    height:175px;
+    border-bottom:solid 2px white;
+}
+
+.display-detail-1{
+    height:125px;
+}
+
+.display-detail-2{
+  height:125px;
+  border-left:solid 2px white;
+}
