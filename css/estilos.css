@@ -65,17 +65,8 @@ footer ul li{
 /* Media Queries */
 @media screen and (max-width: 576px){
 	.navbar{
-		height: 110px;
-	}
-	.navbar-brand{
-		height: 40px;
-		align-self: center;
-		text-align: center;
-		margin:0;
-		padding: 0;		
-	}
-
-	.navbar-nav{
-		height: 40px;
+		width: 80%; margin-left: auto;margin-right: auto;
+		height: 60px;
+		opacity: 0.9;
 	}
 }
