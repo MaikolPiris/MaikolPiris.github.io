@@ -34,13 +34,15 @@ section{
 	background-color: #e9ecef;
 }
 
-.section-main div img{
+.section-main div a img{
+			display: flex;
+			align-self: center;
 			max-width: 80%;
 			height: auto;
 			transition: .5s;
 }
 
-.section-main div img:hover{
+.section-main div a img:hover{
 			transform: scale(1.05);
 			transition: .5s;
 }
