@@ -18,7 +18,7 @@
 				<h3>Maikol Piris</h3>
 			</div>
 			<!-- --- Menu --- -->
-			<nav class="navbar-nav ml-auto col-sm-6 d-flex justify-content-between p-0 m-0 sticky-top" id="myNavbar">
+			<nav class="navbar-nav ml-auto col-sm-6 d-flex justify-content-between p-0 m-0" id="myNavbar">
 				<a href="#acerca" class="nav-link col-4 justify-content-center">
 					<div><span>Acerca</span></div>
 				</a>
@@ -30,12 +30,13 @@
 				</a>
 			</nav>
 		</div>
+		<!-- --- Jumbotron --- -->
 		<div class="jumbotron container" id="acerca">
 			<div class="row header-poster d-flex justify-content-center">
 					<div class="col-12 col-lg-7 d-flex align-items-center justify-content-center">
-						<div>
-							<h2>Desarrollador Web Junior</h2><br>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi </p>
+						<div class="p-4" id="mi-description">
+							<h2>¿Quien soy?</h2><br>
+							<p>Programador Web Junior con conocimientos en HTML, CSS, Javascript Jquery Bootstrap4 con miras a seguir progresando</p>
 						</div>
 					</div>
 					<div class="d-none d-lg-block col-lg-1">
@@ -50,7 +51,7 @@
 <!-- ---PORTFOLIO --- -->
 	<section class="container" id="portfolio">
 		<div class="row justify-content-between p-3">
-			<div class="section-main col-12 col-lg-6">
+			<div class="portfolio-main col-12 col-lg-6">
 				<div class="card p-2 m-2">
 					<a href="weatherMachine.html" target="_blank" style="">
 						<img class="card-img-top ml-auto mr-auto" src="img/weatherMachineProfile.jpg" alt="Card image cap">
@@ -60,10 +61,9 @@
     					<p class="card-text">Página web que mediante la posición GPS del dispositivo consulte con la API de accuWeather y muestra la ifnormación del clima</p>
   					</div>
 				</div>
-				
 			</div>
 
-			<div class="section-main col-12 col-lg-6">
+			<div class="portfolio-main col-12 col-lg-6">
 				<div class="card p-2 m-2">
 					<a href="quoteMachine.html" target="_blank" style="">
 						<img class="card-img-top ml-auto mr-auto" src="img/quoteMachine.jpg" alt="Card image cap">
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 
-			<div class="section-main col-12 col-lg-6">
+			<div class="portfolio-main col-12 col-lg-6">
 				<div class="card p-2 m-2">
 					<a href="tributePage.html" target="_blank" style="">
 						<img class="card-img-top ml-auto mr-auto" src="img/tributePage.jpg" alt="Card image cap">
@@ -88,34 +88,64 @@
 			</div>
 		</div>
 	</section>
-	<section class="container" id="contact">
-			<div class="row p-3">
-				<div class="col-lg-6">
-					<form class="col-12 row" action="https://formspree.io/ferdy.piris@gmail.com" method="POST">
-						<input class="col-12 m-2" type="text" name="name" placeholder="Tu nombre">
-						<input class="col-12 m-2" type="text" name="asunto" placeholder="Porqué">
-						<input class="col-12 m-2" type="email" name="_replyto" placeholder="Tu EMail">
-						<textarea class="col-12 m-2" rows="5" cols="40" name="message">
-						</textarea>
-						<div class="col-6 offset-8 mr-2">
-							<input class="btn btn-info" type="reset" name="reset">
-							<input class="btn btn-primary" type="submit" value="send">
-						</div>
-					</form>
-				</div>
-				<div class="d-none d-lg-block col-lg-1">
-						<div style="border:solid 2px white;height: 100%;width: 0;"></div>
-				</div>
-				<div class="col-lg-5">
-					<p>Acepto cualquier sugerencia.</p>
-					<p>Prometo comunicarme contigo a la brevedad</p>
-				</div>
-			</div>
+	<section class="container">
+		
+
+	</section>
+	<!-- --- Contact --- -->
+	<section class="container section p-4" id="contact">
+		<!-- --- Contact Comments --- -->
+		<div class="p-5 ml-auto mr-auto" id="contact-term">
+		    <h2 class="font-weight-bold text-center">Contacto</h2>
+		    <p class="text-center w-responsive mx-auto m-4">Ante cualquier consulta o duda ponte en contacto conmigo</p>
+		</div>
+		<!-- --- Contact Form --- -->
+	    <div class="row justify-content-center">
+	        <div class="col-md-9 mb-md-0 mb-5">
+	            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <div class="mb-0">
+	                            <input type="text" id="name" name="name" class="form-control">
+	                            <label for="name" class="">Nombre</label>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6">
+	                        <div class="mb-0">
+	                            <input type="text" id="email" name="email" class="form-control">
+	                            <label for="email" class="">EMail</label>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="mb-0">
+	                            <input type="text" id="subject" name="subject" class="form-control">
+	                            <label for="subject" class="">Asunto</label>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="">
+	                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+	                            <label for="message">Mensaje</label>
+	                        </div>
+	                    </div>
+	                </div>
+	            </form>
+	            <div class="text-center text-md-left">
+	            	<a class="btn btn-info" onclick="document.getElementById('contact-form').reset();">Reset</a>
+					<a class="btn btn-primary" onclick="validateForm()">Send</a>
+	            </div>
+	            <div id="status"></div>
+	        </div>
+	    </div>
 	</section>
 
 	<footer class="container-fluid bg-dark d-flex align-items-center">
-		<div class="row">
-		<ul class="col-12 list-unstyled list-inline justify-content-center d-flex">
+		<div class="row justify-content-center d-flex">
+		<ul class="col-12 list-unstyled list-inline">
 			<li class="list-inline-item">
 				<a href="#">
 					<i class="fab fa-facebook" style="font-size: 40px"></i>
