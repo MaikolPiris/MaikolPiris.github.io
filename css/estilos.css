@@ -1,9 +1,14 @@
 body{
+	position: relative;
 	background-color: blue;
 	background-image: url(../img/circuit-board.svg);
 }
 .navbar{
 	height: 70px;
+}
+
+.jumbotron{
+	margin-top: 70px;
 }
 
 .navbar-nav{
@@ -14,10 +19,10 @@ body{
 	text-align: center;
 }
 
-.nav-link:hover{
+/*.nav-link:hover{
 	background-color: grey;
 }
-
+*/
 .portFolioWrapper{
 	background-color: green;
 }
@@ -34,13 +39,15 @@ section{
 	background-color: #e9ecef;
 }
 
-.section-main div img{
+.section-main div a img{
+			display: flex;
+			align-self: center;
 			max-width: 80%;
 			height: auto;
 			transition: .5s;
 }
 
-.section-main div img:hover{
+.section-main div a img:hover{
 			transform: scale(1.05);
 			transition: .5s;
 }
@@ -62,20 +69,29 @@ footer ul li{
 	height: 40px;
 }
 
+.active{
+	background-color: blue!important;;
+	transform:scale(1.1)!important;
+	transition: .5s;
+}
+
+.navbarScroll{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 70px!important;
+	opacity: 0.7;
+	transition-property: width,height,opacity;
+	transition-duration: 1s,1s,2s;
+}
 /* Media Queries */
 @media screen and (max-width: 576px){
 	.navbar{
 		height: 110px;
+		transition:.5s;
 	}
-	.navbar-brand{
-		height: 40px;
-		align-self: center;
-		text-align: center;
-		margin:0;
-		padding: 0;		
+	.jumbotron{
+		margin-top: 110px;
 	}
 
-	.navbar-nav{
-		height: 40px;
-	}
 }

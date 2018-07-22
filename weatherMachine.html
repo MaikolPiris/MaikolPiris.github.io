@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="css/estilosWeatherMachine.css">
+    <title>Personal Page</title>
+</head>
+<body class="notranslate">
+	
+	<div class="container">
+  <div class="row d-flex justify-content-center mt-3">
+    <div class="row col-6 main-wrapper">
+      <!-- Titulo -->
+      <div class="row m-0 col-12 mb-2 d-flex align-items-center" id="title">
+        <div class="col-12"><h1>Weather</h1></div>
+        <div class="col-12 text-right"><h1>Machine</h1></div>
+      </div>
+      <!-- Cuadro de Datos -->
+      <div class="col-12" id="display">
+        <div class="row">
+          <div class="col-5 display-main">
+            <div class="row d-flex align-items-center bg-primary" style="height:80px">
+              <div class="col-6">
+                <i class="fas fa-sun" id="weatherIcon"></i>
+              </div>
+              <div class="col-6">
+                <a id="changeTemp"><span class="centiger" id="currentTemp"><span></a>
+              </div>
+            </div><br>
+            <span>Min:</span><span class="centiger" id="currentMinTemp"></span><br>
+            <span>Max:</span><span class="centiger" id="currentMaxTemp"></span><br>
+          </div>
+          <div class="col-7 display-second">
+            <span>Description:</span><span id="currentDescription"></span><br>
+            <span>Full Description:</span><span id="currentFDescription"></span><hr>
+            <span>Humidity:</span><span id="currentHumidity"></span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-6 display-detail-1">
+            <span>Wind Deg:</span><span id="currentWindDirection"></span><br>
+            <span>Wind Speed:</span><span id="currentWindSpeed"></span><hr>
+            <span>Clouds:</span><span id="currentClouds"></span>
+          </div>
+          <div class="col-6 display-detail-2">
+            <span>Pressure:</span><span id="currentPressure"></span><hr>
+            <span>Lat:</span><span id="currentLatitude"></span><br>
+            <span>Long:</span><span id="currentlongitude"></span><br>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+	<!--Script declarations -->
+   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/scriptsWeatherMachine.js"></script>
+</body>
+</html>

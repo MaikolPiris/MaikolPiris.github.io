@@ -1,0 +1,56 @@
+body{
+  background-color:yellow;
+}
+#quote-wrapper{
+  min-width:500px;
+  max-width:600px;
+  margin-top:100px;
+  min-height:350px;
+  height:auto;
+  max-height:500px;
+}
+
+#quote-content{
+  height:260px;
+  background-color:black;
+  border-radius:10%;
+}
+
+#quote-controls{
+  border-radius:10%;
+  background-color:black;
+  height:50px;
+}
+
+#quote-wrapper div #content{
+  font-size:25px;
+  color:yellow;
+}
+
+#quote-wrapper div #author{
+  font-size:13px;
+}
+
+button{
+  background-color:yellow;
+  transition:.7s;
+}
+
+button:hover{
+  background-color:yellow;
+  transform:scale(1.10);
+  transition:.7s;
+}
+
+#tweetQuote{
+  width:100px;
+}
+
+/*-----------------*/
+#content{
+  margin:0;
+}
+
+#author{
+  margin:0;
+}
