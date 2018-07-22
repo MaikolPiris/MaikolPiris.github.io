@@ -14,6 +14,7 @@ $(document).ready(function(){
     }
   });
   $('body').scrollspy({target: ".navbar-nav", offset:0});   
+  $('body').scrollspy({target: ".navbar-nav", offset: 0});   
   $("#myNavbar a").on('click', function(event) {
   if (this.hash !== "") {
     event.preventDefault();
