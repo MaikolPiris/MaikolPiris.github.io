@@ -47,6 +47,11 @@ body{
 	font-size: 20px;
 }
 
+.img-jumbotron{
+	border:5px #2169BC solid;
+	border-radius: 40%;
+}
+
 /* portfolio */
 section{
 	margin:30px 0;
@@ -70,16 +75,19 @@ section{
 	height: 400px;
 }
 
-footer{
-	height: 70px;
+.card-title{
+	color: blue;
+	font-size: 1.5rem;
 }
 
-footer ul{
-	margin: 0;
+/* Knowme */
+.item-knowme{
+	transition: 0.5s;
 }
 
-footer ul li{
-	height: 40px;
+.item-knowme:hover{
+	transform: scale(1.05);
+	transition:0.5s;
 }
 
 /* Contacto */
@@ -98,6 +106,19 @@ footer ul li{
 	background-color: transparent;
 	border-radius: 0;
 }
+
+footer{
+	height: 70px;
+}
+
+footer ul{
+	margin: 0;
+}
+
+footer ul li{
+	height: 40px;
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 576px){

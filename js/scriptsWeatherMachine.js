@@ -45,7 +45,7 @@ $(document).ready(function(){
       navigator.geolocation.getCurrentPosition(alertPos);
     }
     else
-       alert("Your navigator do nos support geolocation");
+       alert("El navegador no soporta geolocalización");
   }
 
   /* Funcionalidad */

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //Scrollspy
   $(document).scroll("on",function(){
     if ($(document).scrollTop()>75){
       $(".navbar").addClass("navbarScroll")
@@ -27,11 +28,11 @@ $(document).ready(function(){
     }  
   });
 });
-
+//Validación de formularios
 function validateForm() {
     var name =  document.getElementById('name').value;
     if (name == "") {
-        document.getElementById('status').innerHTML = "Name no puede estar vacío";
+        document.getElementById('status').innerHTML = "Nombre no puede ser vacío";
         return false;
     }
     var email =  document.getElementById('email').value;
@@ -52,7 +53,7 @@ function validateForm() {
     }
     var message =  document.getElementById('message').value;
     if (message == "") {
-        document.getElementById('status').innerHTML = "Message no puede estar vacío";
+        document.getElementById('status').innerHTML = "Campo de mensaje no puede estar vacío";
         return false;
     }
     document.getElementById('status').innerHTML = "Enviando...";
