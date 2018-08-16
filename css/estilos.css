@@ -41,10 +41,16 @@ body{
 	font-size: 50px;
 }
 
-#mi-description p{
+.mi-description p{
 	font-weight: 200;
 	font-family: 'Permanent Marker';
-	font-size: 20px;
+	font-size: 15px;
+}
+
+.mi-description ul li{
+	font-weight: 200;
+	font-family: 'Permanent Marker';
+	font-size: 15px;
 }
 
 .img-jumbotron{
